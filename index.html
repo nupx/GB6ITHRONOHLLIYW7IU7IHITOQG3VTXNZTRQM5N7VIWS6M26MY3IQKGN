@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./pdf-lib.js"></script>
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/nupx/nupx/nupx.png" type="image/x-icon">
+    <title>PDF Merger</title>
+</head>
+<body>
+    <main>
+        <div id="fileCont">
+            <input type="file" id="file1">
+            <input type="file" id="file2">
+        </div>
+        <button onclick="addFile()">Add File</button>
+        <button onclick="merge()">Merge</button> <br>
+        <a id="link" class="box" style="display: none;">↓ Download ↓</a>
+    </main>
+    <footer>
+        library:
+        <a href="https://github.com/Hopding/pdf-lib">PDF-Lib ↗</a> &
+        snippet by: <a href="https://stackoverflow.com/a/65568343">mateuszl1995 ↗</a>
+
+    </footer>
+
+    
+    <script src="./nupxpdf.js"></script>
+</body>
+</html>

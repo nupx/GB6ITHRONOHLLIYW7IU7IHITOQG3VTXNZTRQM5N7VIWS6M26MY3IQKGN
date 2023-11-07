@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 600;
+}
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font: 500 ;
+}
+body {
+    display: grid;
+    grid-template-rows: auto max-content;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.split {
+    display: grid;
+    width: 98%;
+    margin: 0 1%;
+    grid-template-columns: 48.5% 1% 48.5%;
+    padding: 10px;
+    column-gap: 1%;
+}
+.vl {
+    border: solid 1px black;
+    background-color: black;
+    height: 95vh;
+  }
+input {
+    display: block;
+    width: 100%;
+    margin: 5px auto 10px auto;
+    padding: 5px;
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+}
+textarea {
+    display: block;
+    width: 100%;
+    margin: 5px auto 10px auto;
+    height: 10em;
+    padding: 5px;
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+    resize: none;
+    word-break: break-all;
+}
+button {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    outline: none;
+    border: solid 1px black;
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+input,textarea,button {
+    border-radius: 0;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+.box {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    border: solid 2px black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+*{word-break: break-all;}
+.hide {
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    * {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .split {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    * {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+footer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: solid 2px black;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
